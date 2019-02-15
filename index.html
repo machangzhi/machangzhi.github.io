@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="lib/swiper.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -21,15 +23,34 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <div id="head" class="head">
-      <p class="title">情人节快乐💗小洋</p>
-      <div class="text">
+    <div class="valentine">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/qd4.jpg" /></div>
+          <div class="swiper-slide"><img src="images/qd5.jpg" /></div>
+          <div class="swiper-slide"><img src="images/qd6.jpg" /></div>
+          <div class="swiper-slide"><img src="images/qd7.jpg" /></div>
+          <div class="swiper-slide"><img src="images/qd8.jpg" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="title">情人节快乐💗小洋</div>
+      <div class="content">
         爱是一场博弈，必须保持永远和对方不分伯仲，旗鼓相当，才能长此以往的相依相惜，因为过强的对手让人疲惫，而太弱的对手令人厌倦。喜相庆，病相扶，寂寞相伴。愿年迈蹒跚，阳光和你仍在。
       </div>
       <div class="text_sign">小马哥</div>
     </div>
-    <div id="banner" class="banner"></div>
-    <div id="wrapper" class="wrapper"></div>
-    <div id="foot" class="foot"></div>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        autoplay: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        }
+      });
+    </script>
   </body>
 </html>

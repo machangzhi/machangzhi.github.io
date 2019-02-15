@@ -57,35 +57,53 @@ table {
 }
 
 p {
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
-// 头部
-#head {
+
+// 情人节感言
+div.valentine {
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     background: -webkit-linear-gradient(left top, red, pink, white);
-    background: -moz-linear-gradient(right bottom,  red, pink, white);
-    background: -o-linear-gradient(right bottom,  red, pink, white);
-    background: linear-gradient(to right bottom, red, pink, white); 
-    p.title{
+    background: -moz-linear-gradient(right bottom, red, pink, white);
+    background: -o-linear-gradient(right bottom, red, pink, white);
+    background: linear-gradient(to right bottom, red, pink, white);
+    font-family: "微软雅黑";
+
+    div.swiper-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+        img{
+            width: 100%;
+        }
+        .swiper-pagination-bullet-active{
+            background: aliceblue;
+        }
+    }
+
+    div.title {
         line-height: 100px;
         text-align: center;
         font-size: 32px;
         color: antiquewhite;
     }
-    div.text{
+
+    div.content {
         line-height: 50px;
         text-indent: 2em;
         font-size: 28px;
         color: #fff;
     }
-    div.text_sign{
+
+    div.text_sign {
         line-height: 50px;
         text-align: right;
         font-size: 22px;
-        color: #333;
+        color: red;
     }
 }
